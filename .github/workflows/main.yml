@@ -55,8 +55,8 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
-        key: ${{ secrets.SSH_KEY }}
-        passphrase: ${{ secrets.PASSPHRASE }} # comment:ssh with end/begin
+        key: ${{ secrets.SSH_KEY }} # comment:ssh with end/begin
+        passphrase: ${{ secrets.PASSPHRASE }} # comment:checking passphrase
         script: |
           # Выполняет pull образа с DockerHub
           sudo docker pull itdxl/first
