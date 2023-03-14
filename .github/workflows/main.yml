@@ -56,7 +56,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }} # comment:ssh with end/begin
-        passphrase: ${{ secrets.PASSPHRASE }} # comment:checking passphrase, resaved pass(cloud
+        passphrase: ${{ secrets.PASSPHRASE }} # comment:checking passphrase, resaved pass(cloud)
         script: |
           # Выполняет pull образа с DockerHub
           sudo docker pull ${{ secrets.DOCKER_USERNAME }}/first:latest
